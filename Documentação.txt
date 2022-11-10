@@ -1,0 +1,43 @@
+-- Sincrono ou asincrono
+
+O sistema Sincrono é o padrão do javascript ou seja uma tarefa é concluida atraz da outra.
+
+Mas há possibilidade de criar um sistema assincrono onde , há tarefas sendo executadas em segundo plano.
+
+A assincronicidade em programação é o ato de executar uma tarefa em “segundo plano”, para a execução das
+outras tarefas menores acontecerem enquanto a maior está sendo carregada, sem interromper o código.
+
+Por traz do javascript ele se comporta seguindo 3 etapas
+
+-- Task Queue
+-- Call stack
+-- Event loop
+
+Even loop --> Serve para selecionar quem deve ser executado primeiro e manda para a função Task Queue
+
+Task Queue --> são para selecionar as prioridades que no caso são os códigos que devem ser executados 
+               primeiro. Fila das tarefas assincrona
+
+Exemplo:
+
+function mandarMensagem() {
+    console.log(“Estou aprendendo a programar.”);
+}
+
+console.log(“O javascript é legal.”);
+mandarMensagem();
+
+console.log(“Eu gosto de HTML e CSS.”);
+
+------------------------------------------------------------------------------------------------------
+
+Com o event loop reproduzindo esse código através do empilhamento de ações na call stack, 
+qual será a ordem que poderemos visualizar essas frases no console?
+
+Resposta : **********
+
+O javascript é legal.
+
+Estou aprendendo a programar.
+
+Eu gosto de HTML e CSS.
