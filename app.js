@@ -1,11 +1,5 @@
-console.log("Mandandando um oi para o amigo")
+var consultaCep = fetch('https://viacep.com.br/ws/01001000/json/')
+.then(resposta => resposta.json()) // isso é uma conversão
+.then(r => console.log(r)) //then significa então faça ..........
 
-function mandaMensagem (){
-    console.log("Tudo bem?")
-    console.log("Vou te mandar uma solicitação")
-    console.log("Solicitação recebida")
-}
-
-mandaMensagem()
-
-console.log("Tchau tchau")
+console.log(consultaCep)

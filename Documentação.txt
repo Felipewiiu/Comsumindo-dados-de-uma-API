@@ -41,3 +41,40 @@ O javascript é legal.
 Estou aprendendo a programar.
 
 Eu gosto de HTML e CSS.
+
+========================================================================================================
+
+-- O que são Callback?
+
+Callback são funções que são enviadas como parâmetros para outras funções.
+
+Elas servem como tempo de espera para a execução da função.
+
+**Nota --
+
+Callbacks são assíncronos, portanto são funções que são ativadas por algum fator 
+pré-determinado, podendo ser um tempo específico, a partir de uma ação do usuário, 
+depois da conclusão de alguma coisa
+
+
+-- SOBRE API
+
+API significa Interface de programação de aplicações, ela fica entre o cliente e servidor fazendo a 
+intermediação de serviço.
+API é uma forma de fornecer acesso a algum serviço.
+
+
+-- METODO FETCH
+
+Ele é o metodo assincrono que ele tem como parâmetro uma url de uma API. 
+
+-- PROMISE
+
+Esse termo se refere a uma promessa de que uma coisa vai acontecer e o retorno dela pode ser que seja:
+
+-- Resolvida 
+
+-- Rejeitada
+
+Uma PROMISE sempre retorna um objeto que é possível ser acessada com THEN() --> então e dentro desse 
+parentese é feita a conversão 
