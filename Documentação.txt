@@ -68,13 +68,48 @@ API é uma forma de fornecer acesso a algum serviço.
 
 Ele é o metodo assincrono que ele tem como parâmetro uma url de uma API. 
 
+Passo a passo da requisição para API
+
+1 -- Usar o método FETCH;
+2 -- Fazer a conversão para JSON;
+3 -- Imprimir no consolo com THEN;
+4 -- Tratar o erro com o catch -- pegar
+
+*******************************************************************************************************************
+
 -- PROMISE
 
 Esse termo se refere a uma promessa de que uma coisa vai acontecer e o retorno dela pode ser que seja:
 
--- Resolvida 
+-- Resolvida --> THEN
 
--- Rejeitada
+-- Rejeitada --> catch
+
+-- finally --> fim da requisição
 
 Uma PROMISE sempre retorna um objeto que é possível ser acessada com THEN() --> então e dentro desse 
-parentese é feita a conversão 
+parentese é feita a conversão para JSON que retornara um object
+
+-- Metodo catch
+
+Serve para tratar erros
+
+Exemplo:
+
+.catch(erro => console.log(erro)) --> 
+
+
+************************************************************************************************************************
+
+Sobre arrow function: https://youtu.be/3EkS9-P3cIM
+
+Uma arrow function precisa ser criada dentro de uma cosntante se precisar chamer ela, pois ela por padrão é anônima
+e não pode ser chamada
+
+const numero = () => {
+    return console.log("Exemplo aqui!!")
+}
+
+************************************************************************************************************************
+
+
